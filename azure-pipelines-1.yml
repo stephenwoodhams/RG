@@ -1,0 +1,15 @@
+# Starter pipeline
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: 'SWoodhams'
+    subscriptionId: '982f27cd-3182-47bc-9395-273f8255cf6d'
+    location: 'UK South'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://cuk-vsts.visualstudio.com/SWOO%20-%20Test%20project/_git/RG.git?path=/template.yaml'
+    csmParametersFileLink: 'https://cuk-vsts.visualstudio.com/SWOO%20-%20Test%20project/_git/RG.git?path=/parameters.yaml'
+    deploymentMode: 'Complete'
+    deploymentName: 'RG_TEST'
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
