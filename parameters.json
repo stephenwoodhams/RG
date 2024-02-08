@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "uksouth"
+        },
+        "extendedLocation": {
+            "value": {}
+        },
+        "virtualNetworkName": {
+            "value": "abp-vnet-uks"
+        },
+        "resourceGroup": {
+            "value": "abp-vnet-uks"
+        },
+        "addressSpaces": {
+            "value": [
+                "10.150.0.0/22"
+            ]
+        },
+        "ipv6Enabled": {
+            "value": false
+        },
+        "subnetCount": {
+            "value": 4
+        },
+        "subnet0_name": {
+            "value": "abp-sub-app-uks"
+        },
+        "subnet0_addressRange": {
+            "value": "10.150.0.0/23"
+        },
+        "subnet1_name": {
+            "value": "abp-sub-ds-uks"
+        },
+        "subnet1_addressRange": {
+            "value": "10.150.3.192/28"
+        },
+        "subnet2_name": {
+            "value": "abp-sub-sql-uks"
+        },
+        "subnet2_addressRange": {
+            "value": "10.150.2.64/26"
+        },
+        "subnet3_name": {
+            "value": "abp-sub-avd-uks"
+        },
+        "subnet3_addressRange": {
+            "value": "10.150.3.96/27"
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        },
+        "firewallEnabled": {
+            "value": false
+        },
+        "bastionEnabled": {
+            "value": false
+        }
+    }
+}
